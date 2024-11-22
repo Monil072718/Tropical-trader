@@ -1,53 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tropical Trade</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-blue-900 text-white">
-  <!-- Header -->
-  <header class="flex justify-between items-center py-4 px-8 bg-white shadow-lg">
-    <div class="flex items-center">
-      <img src="assets/images/logo.png" alt="TTC Logo" class="h-8 mr-4">
-      <span class="font-bold text-blue-900 text-lg">Tropical Trade Corporation</span>
-    </div>
-    <nav class="flex items-center space-x-6 text-blue-900">
-      <a href="#home" class="hover:text-blue-700">Home</a>
-      <a href="#about" class="hover:text-blue-700">About Us</a>
-      <a href="#products" class="hover:text-blue-700">Products</a>
-      <a href="#blog" class="hover:text-blue-700">Blog</a>
-      <a href="#contact" class="hover:text-blue-700">Contact Us</a>
-    </nav>
-    <a href="#enquire" class="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800">
-      Enquire Now
-    </a>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="px-8 py-16 text-center lg:text-left lg:flex lg:justify-between lg:items-center">
-    <div class="lg:w-1/2">
-      <p class="text-sm text-yellow-300 font-bold uppercase">Best Offer For You</p>
-      <h1 class="text-4xl lg:text-6xl font-bold leading-tight text-white">
-        Shop <span class="text-orange-500">Fresh Farm Produce</span> <br />
-        From Your Place Of Convenience
-      </h1>
-      <p class="mt-6 text-gray-300">
-        There are many variations of passages of Lorem Ipsum available, but the majority
-        have suffered alteration in some form, by injected believable going to the middle of text.
-      </p>
-      <a href="#enquire" class="mt-6 inline-block bg-orange-500 text-white py-3 px-8 rounded-lg shadow-lg hover:bg-orange-600">
-        Enquire Now
-      </a>
-    </div>
-    <div class="mt-8 lg:mt-0 lg:w-1/2 grid grid-cols-2 gap-4">
-      <!-- Images Grid -->
-      <img src="assets/images/image1.jpg" alt="Tile Image" class="rounded-lg">
-      <img src="assets/images/image2.jpg" alt="Fresh Produce" class="rounded-lg">
-      <img src="assets/images/image3.jpg" alt="Breakfast Setup" class="rounded-lg">
-      <img src="assets/images/image4.jpg" alt="Nuts and Oranges" class="rounded-lg">
-    </div>
-  </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Trade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        nunito: ['"Nunito Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        customBlue: '#002469',
+                        customGray: '#7F7F7F',
+                        customDarkBlue: '#25395F',
+                        customOrange: '#EF7F1A',
+                    },
+                    backgroundColor: {
+                        customBlue: 'rgba(0, 36, 105, 1)',
+                        customOrange: 'rgba(234, 110, 0, 1)', // Add your custom background color
+                    },
+                },
+            },
+            plugins: [],
+        };
+    </script>
+
+</head>
+
+<body class="  ">
+
+
+
+    <!-- Header -->
+    <header class="bg-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4 ">
+            <!-- Logo and Brand Name -->
+            <div>
+                <img src="assets//images/logo.png" alt="TTC Logo" class="h-[79px]">
+
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-8 text-gray-600">
+                <a href="#"
+                    class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg text-customBlue">Home</a>
+                <a href="#" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
+                <a href="#" class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
+                <a href="#" class="hover:text-customBlue font-nunito text-lg text-customGray">Blog</a>
+                <a href="#" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact Us</a>
+            </nav>
+            <!-- Enquire Now Button -->
+            <a href="#enquire"
+                class="w-[186px] h-[50px]  p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                Enquire Now
+                <span class=""><img src="assets/images/Frame.png" alt=""></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="px-8 py-16 lg:flex lg:justify-between lg:items-center bg-[#25395F] h-[100vh] relative">
+        <div class="container mx-auto gap-8">
+            <!-- Left Content -->
+            <div class="">
+                <div class="mb-[80px] ms-7">
+                    <p
+                        class="uppercase mb-2 text-[#EF7F1A] font-nunito text-[16px] font-normal leading-[17px] text-left flex items-center font-nunito ">
+                        Best Offer For You
+                        <span class="flex items-center ms-2">
+                            <!-- Line -->
+                            <span class="w-10 h-[2px] bg-orange-500"></span>
+                            <!-- Circle -->
+                            <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                        </span>
+                    </p>
+                    <div class="">
+                        <h1 class="text-4xl text-[70px] font-bold leading-tight text-white mb-6">
+                            Shop <span class="text-orange-500">Fresh Farm <br> Produce</span>
+                            From Your <br> Place Of Convenience
+                        </h1>
+                        <p class="text-gray-300 mb-6 text-[18px]">
+                            There are many variations of passages of Lorem Ipsum available, but <br> the majority
+                            have suffered alteration in some form, by we injected <br> believable going to of the middle
+                            of
+                            text.
+                        </p>
+                        <a href="#enquire"
+                            class="w-[186px] h-[50px]  p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                            Enquire Now <span class=""><img src="assets/images/Frame.png" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Right Content with Image Grid -->
+                <div class="absolute top-[37px] right-[55px]">
+                    <!-- Top Image -->
+                    <img src="assets/images//Group 12.png" alt="" class="h-[850px] w-[992px]">
+                </div>
+            </div>
+    </section>
 </body>
+
 </html>
+
+<script>
+
+</script>
