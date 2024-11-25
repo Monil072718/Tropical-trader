@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan:ital@0;1&display=swap"
+        rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -16,6 +21,7 @@
                 extend: {
                     fontFamily: {
                         nunito: ['"Nunito Sans"', 'sans-serif'],
+                        lato: ['Lato', 'sans-serif'],
                     },
                     colors: {
                         customBlue: '#002469',
@@ -370,8 +376,8 @@
                         <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
                     </span>
                 </p>
-                <h2 class="text-[#1E1E1E] text-[50px] font-extrabold font-nunito">Recent News</h2>
-                <p class="text-[#7F7F7F] text-[18px] leading-[25px] mt-4 font-nunito">
+                <h2 class="text-[#1E1E1E] text-[50px] font-extrabold leading-[60px] font-nunito py-4">Recent News</h2>
+                <p class="text-[#7F7F7F] text-[18px] leading-[25px] mt-4 font-nunito text-center">
                     Freshness, great taste, purity, high nutritional value and longer shelf life are some of <br> the
                     main attributes
                     of our products.
@@ -386,19 +392,20 @@
                     <div class="p-4">
                         <div class="flex mt-2">
                             <img src="assets/images/Group.png" alt="" class="me-3">
-                            <p class="text-[#1e1e1e] text-[18px] font-medium leading-[20px] font-nunito">June 15 2020
+                            <p class="text-[#1e1e1e] text-[18px] font-medium leading-[20px] font-lato">June 15 2020
                             </p>
                         </div>
-                        <h3 class="text-[#1e1e1e] text-[26px] font-bold leading-[30px] mt-4 font-nunito">National
+                        <h3 class="text-[#1e1e1e] text-[26px] font-semibold leading-[30px] mt-4 font-nunito">National
                             Association Of Wheats Growers
                         </h3>
-                        <div class="flex">
+                        <div class="flex mt-4">
                             <div>
                                 <img src="assets/images/Ellipse 3.png" alt="">
                             </div>
-                            <div>
-                                <p class="text-[#7F7F7F] mt-2 ">
-                                    <p class="text-[#EF7F1A] font-nunito">Lira Smith</p>  Admin
+                            <div class="ms-3 pb-2">
+                                <p class="text-[#EF7F1A] font-lato">Lira Smith</p>
+                                <p class="text-[#7F7F7F] font-semibold font-lato text-[16px]">
+                                    Admin
                                 </p>
                             </div>
                         </div>
@@ -408,40 +415,73 @@
 
                 <!-- Card 2 -->
                 <div class="bg-white rounded-lg shadow-md overflow-hidden h-[588px]">
-                    <img src="assets/images/Rectangle blog.png" alt="Blog 2" class="w-[460px] h-[366px] object-cover">
+                    <img src="assets/images/Rectangle blog.png" alt="Blog 1" class="  object-cover">
                     <div class="p-4">
-                        <p class="text-[#7F7F7F] text-[14px]">June 15 2020</p>
-                        <h3 class="text-[#002469] text-[20px] font-bold mt-2">Awesome Freeze Concern Hits Wheats Farms
+                        <div class="flex mt-2">
+                            <img src="assets/images/Group.png" alt="" class="me-3">
+                            <p class="text-[#1e1e1e] text-[18px] font-medium leading-[20px] font-lato">June 15 2020
+                            </p>
+                        </div>
+                        <h3 class="text-[#1e1e1e] text-[26px] font-semibold leading-[30px] mt-4 font-nunito">Awesome
+                            Freeze Concern Hits Wheats Farms
                         </h3>
-                        <p class="text-[#7F7F7F] mt-2 flex items-center">
-                            <span class="text-orange-500">Ryan Thomas</span> - Admin
-                        </p>
+                        <div class="flex mt-4">
+                            <div>
+                                <img src="assets/images/Ellipse 3.png" alt="">
+                            </div>
+                            <div class="ms-3 pb-2">
+                                <p class="text-[#EF7F1A] font-lato">Ryan Thomas</p>
+                                <p class="text-[#7F7F7F] font-semibold font-lato text-[16px]">
+                                    Admin
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="bg-white rounded-lg shadow-md overflow-hidden h-[588px]">
-                    <img src="assets/images/Rectangle blog-2.png" alt="Blog 3" class="w-[460px] h-[366px]object-cover">
+                    <img src="assets/images/Rectangle blog-2.png" alt="Blog 1" class="  object-cover">
                     <div class="p-4">
-                        <p class="text-[#7F7F7F] text-[14px]">June 15 2020</p>
-                        <h3 class="text-[#002469] text-[20px] font-bold mt-2">The Best Ways Consumer Trends Impact</h3>
-                        <p class="text-[#7F7F7F] mt-2 flex items-center">
-                            <span class="text-orange-500">Ryan Thomas</span> - Admin
-                        </p>
+                        <div class="flex mt-2">
+                            <img src="assets/images/Group.png" alt="" class="me-3">
+                            <p class="text-[#1e1e1e] text-[18px] font-medium leading-[20px] font-lato">June 15 2020
+                            </p>
+                        </div>
+                        <h3 class="text-[#1e1e1e] text-[26px] font-semibold leading-[30px] mt-4 font-nunito">The Best
+                            Ways Consumer Trends Impact
+                        </h3>
+                        <div class="flex mt-4">
+                            <div>
+                                <img src="assets/images/Ellipse 3.png" alt="">
+                            </div>
+                            <div class="ms-3 pb-2">
+                                <p class="text-[#EF7F1A] font-lato">Ryan Thomas</p>
+                                <p class="text-[#7F7F7F] font-semibold font-lato text-[16px]">
+                                    Admin
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
             <!-- View More Button -->
-            <div class="mt-8 text-center">
+            <div class="mt-8 text-center py-9">
                 <a href="#"
-                    class="px-6 py-3 bg-[#002469] text-white text-[17px] font-bold rounded-lg flex items-center justify-center w-[186px] mx-auto hover:bg-blue-900">
+                    class="px-6 py-3 bg-[#002469] text-white text-[17px] font-bold rounded-lg border border-[rgba(234,110,0,1)] border-opacity-0 flex items-center justify-center w-[186px] mx-auto hover:bg-blue-900">
                     View More
                     <span class="ml-2">
                         <img src="assets/images/Frame.png" alt="Arrow">
                     </span>
                 </a>
             </div>
+
+        </div>
+        <div class="relative">
+            <img src="assets/images/pngwing 7.png" alt="" class="absolute bottom-0 right-0 opacity-[30%]">
         </div>
     </section>
 
