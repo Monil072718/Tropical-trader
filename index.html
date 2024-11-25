@@ -31,22 +31,48 @@
             },
             plugins: [],
         };
-        </script>
-        <link rel="stylesheet" href="assets/js/main.js" class="rel">
+    </script>
+    <link rel="stylesheet" href="assets/js/main.js" class="rel">
 
 </head>
 
 <body>
     <!-- Header -->
-    <div id="header"></div>
+    <!-- <div id="header"></div> -->
 
 
-    
+    <header class="bg-white py-[10px]">
+        <div class="max-w-[1440px] h-[79px] mx-auto flex justify-between items-center">
+            <!-- Logo and Brand Name -->
+            <div class="logo">
+                <img src="assets//images/logo.png" alt="TTC Logo" class="h-[79px]">
+            </div>
+            <!-- Navigation Links -->
+            <div class="menu">
+                <nav class="hidden md:flex space-x-8 text-gray-600">
+                    <a href="#"
+                        class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg text-customBlue">Home</a>
+                    <a href="#" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
+                    <a href="#" class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
+                    <a href="#" class="hover:text-customBlue font-nunito text-lg text-customGray">Blog</a>
+                    <a href="#" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact Us</a>
+                </nav>
+            </div>
+            <!-- Enquire Now Button -->
+            <div class="">
+                <a href="#enquire"
+                    class="w-[186px] h-[50px]  p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                    Enquire Now
+                    <span class=""><img src="assets/images/Frame.png" alt=""></span>
+                </a>
+            </div>
+        </div>
+    </header>
 
     <!-- Hero Section -->
-    <section class="bg-[#25395F] h-[102vh] ">
-        <div class="max-w-[1440px] mx-auto py-8">
-            <div class="mt-[167px] ms-[18px]">
+    <section class="bg-[#25395F] py-11 relative">
+        <div class="max-w-[1440px] flex mx-auto">
+            <div class="pt-40 pb-64 w-2/4 ">
                 <div>
                     <p
                         class="uppercase mb-2 text-[#EF7F1A] font-nunito text-[16px] font-normal leading-[17px] text-left flex items-center font-nunito">
@@ -76,20 +102,20 @@
                     </a>
                 </div>
             </div>
-            <div class="image">
-                <div class="absolute top-[145px] right-[48px]">
-                    <img src="assets/images//Group 12.png" alt="" class="h-[850px] w-[992px]">
+            <div class="image w-2/4 relative">
+                <div class="absolute w-[992px] h-[850px] top-50 right-[-160px]">
+                    <img src="assets/images//Group 12.png" alt="" class="w-100">
                 </div>
-                <div class="absolute top-[199px] right-[311px]">
+                <div class="absolute top-[50px] right-[15%]">
                     <img src="assets/images/Group 4.png" alt="">
                 </div>
-                <div class="absolute bottom-[166px] right-[231px]">
+                <div class="absolute top-[62%] right-[5%]">
                     <img src="assets/images/Group 5.png" alt="">
                 </div>
-                <div class="absolute bottom-[-113px] left-0">
-                    <img src="assets/images/pngwing 7.png" alt="">
-                </div>
             </div>
+        </div>
+        <div class="absolute bottom-0 left-0">
+            <img src="assets/images/pngwing 7.png" alt="">
         </div>
     </section>
 
@@ -154,20 +180,176 @@
 
     <!-- product section -->
     <section>
-        <div class="max-w-[1440px] mx-auto h-[100vh] pt-[100px]">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id repudiandae sint fugit pariatur aut
-                in, ab veritatis reiciendis ea provident voluptates iure repellat fuga perferendis sequi quam nemo
-                corrupti assumenda nam odit cumque molestiae mollitia. Temporibus, recusandae aut dicta nulla animi
-                repellendus quibusdam quaerat illo eveniet, fugiat porro voluptatem!
-            </p>
+        <div class="relative">
+            <!-- Background Image or Text -->
+            <div
+                class="absolute top-0 right-0 text-[300px] leading-[230px] font-extrabold font-nunito text-[#EF7F1A0F] uppercase select-none">
+                <img src="assets/images/pngwing 8.png" alt="">
+            </div>
+
+            <div class="max-w-[1440px] mx-auto min-h-[100vh] pt-[100px]">
+                <!-- Header Section -->
+                <div class="flex flex-wrap items-center justify-between gap-6">
+                    <div>
+                        <p
+                            class="uppercase text-[#EF7F1A] font-nunito text-[16px] font-medium  leading-[17px] text-left flex items-center mb-[20px]">
+                            SHOP BY CATEGORY
+                            <span class="flex items-center ms-2">
+                                <span class="w-8 h-[1px] bg-orange-500"></span>
+                                <span class="w-1 h-1 bg-orange-500 rounded-full"></span>
+                            </span>
+                        </p>
+                        <h1 class="font-nunito font-extrabold text-[50px] leading-[50px] text-[#1E1E1E]">
+                            Hottest Products Of The Week
+                        </h1>
+                        <p class="font-nunito font-normal text-[18px] leading-[25px] text-[#7F7F7F] mt-[20px]">
+                            Freshness, great taste, purity, high nutritional value and longer shelf<br>
+                            life are some of the main attributes of our products.
+                        </p>
+                    </div>
+
+                    <div>
+                        <a href="#enquire"
+                            class="px-6 py-4 gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex items-center text-[17px] font-bold text-white">
+                            Enquire Now
+                            <span class=""><img src="assets/images/Frame.png" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cards Section -->
+                <div class="py-12">
+                    <div class="px-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Card 1 -->
+                            <div class="bg-white rounded-lg overflow-hidden w-full">
+                                <img src="assets/images/Rectangle 1940.png" alt="Food & Agro"
+                                    class="w-full h-[200px] object-cover">
+                                <div class="px-4 py-6 text-center bg-gray-100">
+                                    <h3 class="font-nunito font-semibold text-[27px] text-[#002469]">
+                                        Food & Agro
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="bg-white rounded-lg overflow-hidden w-full">
+                                <img src="assets/images/Rectangle 1088.png" alt="Ceramic Tiles"
+                                    class="w-full h-[200px] object-cover">
+                                <div class="px-4 py-6 text-center bg-gray-100">
+                                    <h3 class="font-nunito font-semibold text-[27px] text-[#002469]">
+                                        Ceramic Tiles
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="bg-white rounded-lg overflow-hidden w-full">
+                                <img src="assets/images/Rectangle 1940 (1).png" alt="Hotel Supplies"
+                                    class="w-full h-[200px] object-cover">
+                                <div class="px-4 py-6 text-center bg-gray-100">
+                                    <h3 class="font-nunito font-semibold text-[27px] text-[#002469]">
+                                        Hotel Supplies
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="bg-white rounded-lg overflow-hidden w-full">
+                                <img src="assets/images/Rectangle 1940 (2).png" alt="Printing & Merchandising"
+                                    class="w-full h-[200px] object-cover">
+                                <div class="px-4 py-6 text-center bg-gray-100">
+                                    <h3 class="font-nunito font-semibold text-[27px] text-[#002469]">
+                                        Printing & Merchandising
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="bg-white rounded-lg overflow-hidden w-full">
+                                <img src="assets/images/Rectangle 1940 (3).png" alt="Plastic Products"
+                                    class="w-full h-[200px] object-cover">
+                                <div class="px-4 py-6 text-center bg-gray-100">
+                                    <h3 class="font-nunito font-semibold text-[27px] text-[#002469]">
+                                        Plastic Products
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div class="bg-white rounded-lg overflow-hidden w-full">
+                                <img src="assets/images/Rectangle 1940 (4).png" alt="COVID-19 Related"
+                                    class="w-full h-[200px] object-cover">
+                                <div class="px-4 py-6 text-center bg-gray-100">
+                                    <h3 class="font-nunito font-semibold text-[27px] text-[#002469]">
+                                        COVID-19 Related
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
 
+<!-- counter  -->
+    <section class="bg-[#25395F] py-12  bg-cover bg-center">
 
+        <div class="max-w-[1440px] mx-auto px-4 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div class="relative w-full h-[150px] border-2 border-white ">
+                <!-- Number -->
+                <h2 class=" text-white text-center py-9 text-4xl font-bold">1800</h2>
+              
+                <!-- Slanted Box -->
+                <div class="absolute bottom-[-2px] left-[-2px] bg-[#002155] text-white py-4 px-14 font-semibold text-[17px]"
+                     style="clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);">
+                  Email Attend
+                </div>
+              </div>
+              
 
+            <!-- Card 2 -->
+            <div class="relative w-full h-[150px] border-2 border-white ">
+                <!-- Number -->
+                <h2 class=" text-white text-center py-9 text-4xl font-bold">765</h2>
+              
+                <!-- Slanted Box -->
+                <div class="absolute bottom-[-2px] left-[-2px] bg-[#002155] text-white py-4 px-14 font-semibold text-[17px]"
+                     style="clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);">
+                     Telephonic Talk
+                </div>
+              </div>
 
+            <!-- Card 3 -->
+            <div class="relative w-full h-[150px] border-2 border-white ">
+                <!-- Number -->
+                <h2 class=" text-white text-center py-9 text-4xl font-bold">960</h2>
+              
+                <!-- Slanted Box -->
+                <div class="absolute bottom-[-2px] left-[-2px] bg-[#002155] text-white py-4 px-14 font-semibold text-[17px]"
+                     style="clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);">
+                     Order Completed
+                </div>
+              </div>
+
+            <!-- Card 4 -->
+            <div class="relative w-full h-[150px] border-2 border-white ">
+                <!-- Number -->
+                <h2 class=" text-white text-center py-9 text-4xl font-bold">750</h2>
+              
+                <!-- Slanted Box -->
+                <div class="absolute bottom-[-2px] left-[-2px] bg-[#002155] text-white py-4 px-14 font-semibold text-[17px]"
+                     style="clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);">
+                     Happy Clients
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
 
 
 </body>
@@ -175,33 +357,5 @@
 </html>
 
 <script>
-    // <div class="">
-    //     <div class="flex justify-center items-center">
-    //         <div class="flex-1">
-    //             <div>
-    //                 <h2 class="text-[50px] font-nunito leading-[60px] font-extrabold text-gray-900 mb-4">Special
-    //                     Products <br>For Most People</h2>
-    //             </div>
-    //             <div>
-    //                 <a href="#enquire"
-    //                     class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
-    //                     Enquire Now <span class=""><img src="assets/images/Frame.png" alt=""></span>
-    //                 </a>
-    //             </div>
-    //         </div>
-    //         <div>
-    //             <div class="flex-1 mt-[150px]">
-    //                 <img src="assets/images/Group 18.png" alt="" class="w-[491px] h-[470px]">
-    //             </div>
-    //         </div>
-    //         <div class="flex-1">
-    //             <p class="text-gray-700 mb-6">
-    //                 Tropical Trade Corporation is positioned in Gujarat, India. We have created a distinct
-    //                 position in
-    //                 terms of a wide range of global categories of products such as Food & Agro, Ceramic Tiles,
-    //                 Hotel Supplies, Plastic Products, Printing & Merchandising & more.
-    //             </p>
-    //         </div>
-    //     </div>
-    // </div>
+
 </script>
