@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        nunito: ['"Nunito Sans"', 'sans-serif'],
+                        lato: ['Lato', 'sans-serif'],
+                    },
+                    colors: {
+                        customBlue: '#002469',
+                        customGray: '#7F7F7F',
+                        customDarkBlue: '#25395F',
+                        customOrange: '#EF7F1A',
+                    },
+                    backgroundColor: {
+                        customBlue: 'rgba(0, 36, 105, 1)',
+                        customOrange: 'rgba(234, 110, 0, 1)', // Add your custom background color
+                    },
+                },
+            },
+            plugins: [],
+        };
+    </script>
+</head>
+
+<body>
+    <header class="bg-white py-[10px]">
+        <div class="max-w-[1440px] h-[79px] mx-auto flex justify-between items-center">
+            <!-- Logo and Brand Name -->
+            <div class="logo">
+                <img src="assets//images/logo.png" alt="TTC Logo" class="h-[79px]">
+            </div>
+            <!-- Navigation Links -->
+            <div class="menu">
+                <nav class="hidden md:flex space-x-8 text-gray-600">
+                    <a href="#"
+                        class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg text-customBlue">Home</a>
+                    <a href="about.html" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
+                    <a href="#" class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
+                    <a href="#" class="hover:text-customBlue font-nunito text-lg text-customGray">Blog</a>
+                    <a href="#" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact Us</a>
+                </nav>
+            </div>
+            <!-- Enquire Now Button -->
+            <div class="">
+                <a href="#enquire"
+                    class="w-[186px] h-[50px]  p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                    Enquire Now
+                    <span class=""><img src="assets/images/Frame.png" alt=""></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <section class="relative bg-cover bg-center h-[400px]"
+        style="background-image: url('assets/images/Rectangle 1948.png');">
+        <div class="absolute inset-0 bg-[#002155CC]"></div>
+
+        <div class="relative flex justify-center items-center h-full">
+            <h1 class="text-white text-4xl font-bold flex items-center gap-2">
+                ABOUT US
+                <span class="flex items-center">
+                    <span class="w-6 h-[2px] bg-white"></span>
+                    <span class="w-2 h-2 bg-white rounded-full ml-1"></span>
+                </span>
+            </h1>
+        </div>
+    </section>
+
+    <!--product  -->
+    <section class="relative bg-white py-16">
+        <div
+            class="absolute top-[50px] left-[-660px] text-[300px] font-bold text-[#EF7F1A0F] uppercase -rotate-90 transform select-none">
+            About Us
+        </div>
+        <div class="max-w-[1440px] mx-auto px-4 flex flex-wrap lg:flex-nowrap gap-8 items-center">
+            <!-- Left Image Section -->
+            <div class="w-full lg:w-1/2">
+                <img src="assets/images/Rectangle 1953.png" alt="Fresh Vegetables"
+                    class="rounded-lg shadow-lg w-full h-auto">
+            </div>
+
+            <!-- Right Content Section -->
+            <div class="w-full lg:w-1/2 space-y-6">
+                <p class="uppercase text-[#EF7F1A] font-nunito text-[16px] font-semibold">
+                    Get Wide Range of Products
+                    <span class="inline-flex items-center ml-2">
+                        <span class="w-10 h-[2px] bg-orange-500"></span>
+                        <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                    </span>
+                </p>
+                <h2 class="text-[#1E1E1E] font-nunito text-[40px] font-extrabold leading-tight">
+                    Request A Quote For Our Products
+                </h2>
+                <p class="text-[#7F7F7F] font-nunito text-[16px] leading-[24px]">
+                    Tropical Trade Corporation is positioned at Gujarat, India. We have carved a distinct position in
+                    offering a wide
+                    range of products that includes Food & Agro, Ceramic Tiles, Hotel Supplies, Plastic Products,
+                    Printing &
+                    Merchandising & etc.
+                </p>
+                <p class="text-[#7F7F7F] font-nunito text-[16px] leading-[24px]">
+                    We are counted amidst the topmost Merchant Exporter & supplier of these products across the globe,
+                    ensuring the
+                    finest quality.
+                </p>
+
+
+                <a href="#"
+                    class="px-6 py-3 bg-[#002469] text-white text-[17px] font-bold rounded-lg border border-[rgba(234,110,0,1)] border-opacity-0 flex items-center justify-center w-[186px] mx-auto hover:bg-blue-900">
+                    View More
+                    <span class="ml-2">
+                        <img src="assets/images/Frame.png" alt="Arrow">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
