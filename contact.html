@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Contact Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap" rel="stylesheet">
@@ -13,7 +12,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan:ital@0;1&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -40,9 +38,7 @@
         };
     </script>
 </head>
-
 <body>
-    <!-- header -->
     <header class="bg-white py-[10px]">
         <div class="max-w-[1440px] h-[79px] mx-auto flex justify-between items-center">
             <!-- Logo and Brand Name -->
@@ -78,7 +74,7 @@
 
         <div class="max-w-[1440px] mx-auto relative flex justify-start items-center h-full">
             <h1 class="text-white text-[70px] leading-[70px] font-nunito font-bold flex items-center gap-2">
-                Products
+                Contact Us
                 <span class="flex items-center">
                     <span class="w-6 h-[2px] bg-white"></span>
                     <span class="w-2 h-2 bg-white rounded-full ml-1"></span>
@@ -87,81 +83,101 @@
         </div>
     </section>
 
-    <section class="relative">
-
-        <div class="max-w-[1440px] mx-auto  py-32">
-            <div class="flex py-16">
-                <div>
-                    <img src="assets/images/1943.png" alt="" class="w-[695px] h-[587px]">
-                </div>
-                <div class="px-14 py-8">
-                    <div class="head mb-16">
-                        <a href=""
-                            class="text-[#7F7F7F] text-[20px] leading-[17px] font-nunito font-semibold me-1">Home</a>
-                        <i class="fa-solid fa-chevron-right text-[#7F7F7F] text-[20px] me-4"></i> <a href=""
-                            class="text-[#7F7F7F] text-[20px] leading-[17px] font-nunito font-semibold me-1">Food &
-                            Agro</a>
-                        <i class="fa-solid fa-chevron-right text-[#7F7F7F] text-[20px] me-4"></i> <a href=""
-                            class="text-[#7F7F7F] text-[20px] leading-[17px] font-nunito font-semibold me-1"> Fresh
-                            Fruits</a> <i class="fa-solid fa-chevron-right text-[#7F7F7F] text-[20px] me-4"></i> <a
-                            href="" class="text-[#7F7F7F] text-[20px] leading-[17px] font-nunito font-semibold me-1">
-                            Fresh
-                            Watermelon</a><i class="fa-solid fa-chevron-right text-[#7F7F7F] text-[20px] me-4"></i>
-                    </div>
-                    <div class="">
-                        <h1 class="text-[40px] leading-[40px] font-munito font-bold">Organic Fresh Watermelon</h1>
-                    </div>
-                </div>
+    <div class="container mx-auto p-8">
+        <div class="grid lg:grid-cols-3 gap-8">
+    
+          <!-- Image Section -->
+          <div class="lg:col-span-2">
+            <img 
+              src="assets/images/Rectangle 2001.png" 
+              alt="Blueberries" 
+              class="w-full rounded-md shadow-md"
+            />
+            <h2 class="mt-6 text-2xl font-semibold text-gray-800">
+              Contact us to find out more or how we can help
+            </h2>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+              <input 
+                type="text" 
+                placeholder="Name" 
+                class="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input 
+                type="email" 
+                placeholder="Email" 
+                class="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input 
+                type="tel" 
+                placeholder="Phone" 
+                class="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input 
+                type="text" 
+                placeholder="Afghanistan" 
+                class="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <textarea 
+                placeholder="Your Message" 
+                class="col-span-2 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              ></textarea>
+              <button 
+                type="submit" 
+                class="col-span-2 bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+    
+          <!-- Contact Info Section -->
+          <div class="space-y-6">
+            <!-- Card 1 -->
+            <div class="bg-blue-100 p-4 rounded-md shadow-md">
+              <h3 class="text-lg font-semibold text-gray-800">
+                TROPICAL TRADE CORPORATION SURAT
+              </h3>
+              <p class="mt-2 text-gray-700">
+                <strong>Address:</strong><br />
+                311-312, SNS Arista, Near Prime Shoppers, Vesu,<br />
+                Surat, Gujarat 395006, India
+              </p>
+              <p class="mt-2 text-gray-700">
+                <strong>Phone No.:</strong><br />
+                +91-88665 08538 / +91-261-3512057
+              </p>
+              <p class="mt-2 text-gray-700">
+                <strong>Email:</strong><br />
+                <a href="mailto:export@thetropicaltrade.com" class="text-blue-600 underline">
+                  export@thetropicaltrade.com
+                </a>
+              </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Product Card -->
-                <div class="border rounded-lg overflow-hidden shadow-lg">
-                    <img src="assets/images/Rectangle 1979.png" alt="Product 1"
-                        class="w-[466px] h-[411px] object-cover">
-                    <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh
-                            Banana</h3>
-                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00
-                        </p>
-                        <button href="showproduct.html"
-                            class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold">
-                            Enquire Here
-                        </button>
-                    </div>
-                </div>
-                <div class="border rounded-lg overflow-hidden shadow-lg">
-                    <img src="assets/images/Rectangle 1941.png" alt="Product 1"
-                        class="w-[466px] h-[411px] object-cover">
-                    <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh
-                            Banana</h3>
-                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00
-                        </p>
-                        <button
-                            class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold">
-                            Enquire Here
-                        </button>
-                    </div>
-                </div>
-                <div class="border rounded-lg overflow-hidden shadow-lg">
-                    <img src="assets/images/1942.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
-                    <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh
-                            Banana</h3>
-                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00
-                        </p>
-                        <button
-                            class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold">
-                            Enquire Here
-                        </button>
-                    </div>
-                </div>
-
-
+    
+            <!-- Card 2 -->
+            <div class="bg-blue-100 p-4 rounded-md shadow-md">
+              <h3 class="text-lg font-semibold text-gray-800">
+                TROPICAL TRADE CORPORATION AHMEDABAD
+              </h3>
+              <p class="mt-2 text-gray-700">
+                <strong>Address:</strong><br />
+                404, I-Square Corporate Park, Science City Road,<br />
+                Ahmedabad, India
+              </p>
+              <p class="mt-2 text-gray-700">
+                <strong>Phone No.:</strong><br />
+                +91-88665 08538 / +91-261-3512057
+              </p>
+              <p class="mt-2 text-gray-700">
+                <strong>Email:</strong><br />
+                <a href="mailto:export@thetropicaltrade.com" class="text-blue-600 underline">
+                  export@thetropicaltrade.com
+                </a>
+              </p>
             </div>
+          </div>
+    
         </div>
-    </section>
-    <footer class="bg-[#002469]"></footer>
+      </div>
 </body>
-
 </html>
