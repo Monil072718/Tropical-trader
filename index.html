@@ -51,23 +51,44 @@
                 <img src="assets//images/logo.png" alt="TTC Logo" class="h-[79px]">
             </div>
             <!-- Navigation Links -->
-            <div class="menu">
+            <div class="flex items-center space-x-8">
                 <nav class="hidden md:flex space-x-8 text-gray-600">
-                    <a href="#"
-                        class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg text-customBlue">Home</a>
+                    <a href="#" class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg text-customBlue">Home</a>
                     <a href="about.html" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
                     <a href="product.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
                     <a href="blog.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Blog</a>
                     <a href="contact.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact Us</a>
                 </nav>
+                <!-- Enquire Now Button -->
+                <div class="hidden md:block">
+                    <a href="#enquire" class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                        Enquire Now
+                        <span><img src="assets/images/Frame.png" alt=""></span>
+                    </a>
+                </div>
             </div>
-            <!-- Enquire Now Button -->
-            <div class="">
-                <a href="#enquire"
-                    class="w-[186px] h-[50px]  p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
-                    Enquire Now
-                    <span class=""><img src="assets/images/Frame.png" alt=""></span>
-                </a>
+            <div id="mobile-menu" class="md:hidden hidden w-full bg-white">
+                <nav class="flex flex-col space-y-4 py-4 px-6">
+                    <a href="#" class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg">Home</a>
+                    <a href="about.html" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
+                    <a href="product.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
+                    <a href="blog.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Blog</a>
+                    <a href="contact.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact Us</a>
+                    <div class="mt-6">
+                        <a href="#enquire" class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                            Enquire Now
+                            <span><img src="assets/images/Frame.png" alt=""></span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <!-- Mobile Hamburger Menu -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-customBlue">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -76,11 +97,11 @@
 
     <!-- Hero Section -->
     <section class="bg-[#25395F] py-11 relative">
-        <div class="max-w-[1440px] flex mx-auto">
-            <div class="pt-40 pb-64 w-2/4 ">
+        <div class="max-w-[1440px] flex mx-auto flex-col lg:flex-row">
+            <!-- Text Content -->
+            <div class="w-full lg:w-2/4 lg:pt-40 px-6 lg:pb-64 mb-12 md:mb-0">
                 <div>
-                    <p
-                        class="uppercase mb-2 text-[#EF7F1A] font-nunito text-[16px] font-normal leading-[17px] text-left flex items-center font-nunito">
+                    <p class="uppercase mb-2 text-[#EF7F1A] font-nunito text-[14px] lg:text-[16px] font-normal leading-[17px] text-left flex items-center">
                         best offer for you
                         <span class="flex items-center ms-2">
                             <span class="w-10 h-[2px] bg-orange-500"></span>
@@ -89,40 +110,52 @@
                     </p>
                 </div>
                 <div>
-                    <h1 class="text-4xl text-[70px] font-bold  text-white mb-6 leading-[80px]">
+                    <h1 class="text-4xl lg:text-[70px] text-[24px] font-bold text-white mb-6 lg:leading-[80px] leading-[30px]">
                         Shop <span class="text-orange-500">Fresh Farm <br> Produce</span>
                         From Your <br> Place Of Convenience
                     </h1>
                     <p class="text-gray-300 mb-6 text-[18px]">
-                        There are many variations of passages of Lorem Ipsum available, but <br> the majority
+                        There are many variations of passages of Lorem Ipsum available, but <br class=""> the majority
                         have suffered alteration in some form, by we injected <br> believable going to of the middle
-                        of
-                        text.
+                        of text.
                     </p>
                 </div>
                 <div>
                     <a href="#enquire"
-                        class="w-[186px] h-[50px]  p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                        class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white mx-auto">
                         Enquire Now <span class=""><img src="assets/images/Frame.png" alt=""></span>
                     </a>
                 </div>
             </div>
-            <div class="image w-2/4 relative">
-                <div class="absolute w-[992px] h-[850px] top-50 right-[-160px]">
-                    <img src="assets/images//Group 12.png" alt="" class="w-100">
+    
+            <!-- Image Content -->
+            <div class="image w-full lg:w-2/4 relative">
+                <!-- Large Image (Hidden for mobile) -->
+                <div class="absolute w-[992px] h-[850px] top-50 right-[-160px] hidden md:block">
+                    <img src="assets/images/Group 12.png" alt="" class="w-100">
                 </div>
-                <div class="absolute top-[50px] right-[15%]">
+    
+                <!-- Smaller Images (Hidden for mobile) -->
+                <div class="absolute top-[50px] right-[15%] hidden md:block">
                     <img src="assets/images/Group 4.png" alt="">
                 </div>
-                <div class="absolute top-[62%] right-[5%]">
+                <div class="absolute top-[62%] right-[5%] hidden md:block">
                     <img src="assets/images/Group 5.png" alt="">
+                </div>
+    
+                <!-- Mobile Image Adjustment -->
+                <div class="md:hidden w-full mt-6">
+                    <img src="assets/images/Group 12.png" alt="" class="w-full h-auto">
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-0 left-0">
-            <img src="assets/images/light.png" alt="">
+    
+        <!-- Light Image (For both mobile and desktop) -->
+        <div class="absolute bottom-0 left-0  hidden md:block">
+            <img src="assets/images/light.png" alt="" class="w-full">
         </div>
     </section>
+    
     
      
     <!-- About us  -->
@@ -132,11 +165,11 @@
                 About Us
             </div>
         </div>
-        <div class="max-w-[1440px] mx-auto pb-[100px]">
+        <div class="max-w-[1440px] mx-auto lg:pb-[100px] pb-[20px]">
             <div class="flex flex-col md:flex-row">
                 <!-- Left Section (Text and Button) -->
                 <div class="flex-1 px-6 md:px-0">
-                    <div class="mt-[242px]">
+                    <div class="lg:mt-[242px] mt-[50px]">
                         <p class="uppercase mb-2 text-[#EF7F1A] font-nunito text-[16px] font-semibold leading-[17px] text-left flex items-center">
                             ESTABLISHED IN 2019
                             <span class="flex items-center ms-2">
@@ -163,7 +196,7 @@
                 <div class="flex-1 relative">
                     <div class="flex-1">
                         <img src="assets/images/Group 18.png" alt=""
-                            class="w-[508px] h-[470px] mt-[118px] absolute top-0 right-[45px] md:block hidden">
+                            class="w-[508px] h-[470px] mt-[118px] absolute top-0 right-[45px]">
                     </div>
                 </div>
     
