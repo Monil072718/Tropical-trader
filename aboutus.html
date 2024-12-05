@@ -49,9 +49,9 @@
                 <img src="assets//images/logo.png" alt="TTC Logo" class="h-[79px]">
             </div>
             <!-- Navigation Links -->
-            <div class="menu">
+            <div class="flex items-center space-x-8">
                 <nav class="hidden md:flex space-x-8 text-gray-600">
-                    <a href="index.html"
+                    <a href="#"
                         class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg text-customBlue">Home</a>
                     <a href="about.html" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
                     <a href="product.html"
@@ -61,13 +61,42 @@
                         Us</a>
                 </nav>
             </div>
-            <!-- Enquire Now Button -->
-            <div class="">
-                <a href="#enquire"
-                    class="w-[186px] h-[50px]  p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
-                    Enquire Now
-                    <span class=""><img src="assets/images/Frame.png" alt=""></span>
-                </a>
+
+                <!-- Enquire Now Button -->
+                <div class="hidden md:block">
+                    <a href="#enquire"
+                        class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                        Enquire Now
+                        <span><img src="assets/images/Frame.png" alt=""></span>
+                    </a>
+                </div>
+            <div id="mobile-menu" class="md:hidden hidden w-full bg-white">
+                <nav class="flex flex-col space-y-4 py-4 px-6">
+                    <a href="#" class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg">Home</a>
+                    <a href="about.html" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
+                    <a href="product.html"
+                        class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
+                    <a href="blog.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Blog</a>
+                    <a href="contact.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact
+                        Us</a>
+                    <div class="mt-6">
+                        <a href="#enquire"
+                            class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                            Enquire Now
+                            <span><img src="assets/images/Frame.png" alt=""></span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <!-- Mobile Hamburger Menu -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-customBlue">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>

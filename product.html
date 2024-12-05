@@ -47,23 +47,54 @@
                 <img src="assets//images/logo.png" alt="TTC Logo" class="h-[79px]">
             </div>
             <!-- Navigation Links -->
-            <div class="menu">
+            <div class="flex items-center space-x-8">
                 <nav class="hidden md:flex space-x-8 text-gray-600">
-                    <a href="index.html"
+                    <a href="#"
                         class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg text-customBlue">Home</a>
                     <a href="about.html" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
-                    <a href="product.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
+                    <a href="product.html"
+                        class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
                     <a href="blog.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Blog</a>
-                    <a href="contact.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact Us</a>
+                    <a href="contact.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact
+                        Us</a>
                 </nav>
             </div>
-            <!-- Enquire Now Button -->
-            <div class="">
-                <a href="#enquire"
-                    class="w-[186px] h-[50px]  p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
-                    Enquire Now
-                    <span class=""><img src="assets/images/Frame.png" alt=""></span>
-                </a>
+
+                <!-- Enquire Now Button -->
+                <div class="hidden md:block">
+                    <a href="#enquire"
+                        class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                        Enquire Now
+                        <span><img src="assets/images/Frame.png" alt=""></span>
+                    </a>
+                </div>
+            <div id="mobile-menu" class="md:hidden hidden w-full bg-white">
+                <nav class="flex flex-col space-y-4 py-4 px-6">
+                    <a href="#" class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg">Home</a>
+                    <a href="about.html" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
+                    <a href="product.html"
+                        class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
+                    <a href="blog.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Blog</a>
+                    <a href="contact.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact
+                        Us</a>
+                    <div class="mt-6">
+                        <a href="#enquire"
+                            class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                            Enquire Now
+                            <span><img src="assets/images/Frame.png" alt=""></span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <!-- Mobile Hamburger Menu -->
+            <div class="md:hidden flex items-center me-5">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-customBlue">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -85,7 +116,7 @@
     </section>
 
     <!-- Card -->
-     <div class="relative">
+     <div class="relative lg:block hidden">
         <div class="absolute top-0 right-0">
             <img src="assets/images/pngwing 8.png" alt="">
         </div>
@@ -93,12 +124,12 @@
     <section class="bg-white py-8">
         <div class="max-w-[1440px] mx-auto px-4">
             <!-- Tabs Navigation -->
-            <div class="flex justify-between items-center mb-6  py-4">
-                <div class="flex  border border-[#002155] bg-[#E7ECF8] w-[939px]">
-                    <button class="px-4 py-4 bg-[#002155] text-white rounded-lg font-semibold ">Fresh Fruits</button>
-                    <button class="px-4 py-2  text-gray-800 rounded-lg font-semibold ">Fresh Vegetables</button>
-                    <button class="px-4 py-2  text-gray-800 rounded-lg font-semibold ">Grounded Spices</button>
-                    <button class="px-4 py-2  text-gray-800 rounded-lg font-semibold ">Dairy Product</button>
+            <div class="flex-wrap lg:flex justify-between items-center mb-6  py-4">
+                <div class="flex-wrap lg:flex  border border-[#002155] bg-[#E7ECF8] max-w-[939px]">
+                    <button class="px-4 py-5 bg-[#002155] text-white rounded-lg font-semibold w-full">Fresh Fruits</button>
+                    <button class="px-4 py-5 border border-b-2 border-black  text-gray-800 rounded-lg font-semibold w-full">Fresh Vegetables</button>
+                    <button class="px-4 py-5  text-gray-800 rounded-lg font-semibold w-full">Grounded Spices</button>
+                    <button class="px-4 py-5  text-gray-800 rounded-lg font-semibold w-full">Dairy Product</button>
                 </div>
                 <div class="flex border border-[#002155] px-3 py-4 bg-[#E7ECF8]">
                     <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
@@ -138,7 +169,7 @@
                 <div class="border rounded-lg overflow-hidden shadow-lg">
                     <img src="assets/images/Rectangle 1941.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
                     <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh Banana</h3>
+                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic  Fresh Grapes</h3>
                         <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00</p>
                         <a href="showproduct.html" class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
                             Enquire Here
@@ -148,37 +179,37 @@
                 <div class="border rounded-lg overflow-hidden shadow-lg">
                     <img src="assets/images/1942.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
                     <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh Banana</h3>
+                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic  Fresh Mangoes</h3>
                         <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00</p>
                         <a href="showproduct.html" class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
                             Enquire Here
                         </a>
                     </div>
                 </div>
-                <div class="border rounded-lg overflow-hidden shadow-lg">
+                <div class="border rounded-lg overflow-hidden shadow-lg lg:block hidden">
                     <img src="assets/images/1943.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
                     <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh Banana</h3>
+                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic  Fresh  Watermelon</h3>
                         <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00</p>
                         <a href="showproduct.html" class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
                             Enquire Here
                         </a>
                     </div>
                 </div>
-                <div class="border rounded-lg overflow-hidden shadow-lg">
+                <div class="border rounded-lg overflow-hidden shadow-lg lg:block hidden">
                     <img src="assets/images/1944.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
                     <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh Banana</h3>
+                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic  Fresh Chikoos</h3>
                         <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00</p>
                         <a href="showproduct.html" class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
                             Enquire Here
                         </a>
                     </div>
                 </div>
-                <div class="border rounded-lg overflow-hidden shadow-lg">
+                <div class="border rounded-lg overflow-hidden shadow-lg lg:block hidden">
                     <img src="assets/images/1945.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
                     <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh Banana</h3>
+                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic  Fresh Round Kivi</h3>
                         <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00</p>
                         <a href="showproduct.html" class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
                             Enquire Here
