@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,6 +39,7 @@
         };
     </script>
 </head>
+
 <body>
     <!-- header -->
     <header class="bg-white py-[10px]">
@@ -60,14 +62,14 @@
                 </nav>
             </div>
 
-                <!-- Enquire Now Button -->
-                <div class="hidden md:block">
-                    <a href="#enquire"
-                        class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
-                        Enquire Now
-                        <span><img src="assets/images/Frame.png" alt=""></span>
-                    </a>
-                </div>
+            <!-- Enquire Now Button -->
+            <div class="hidden md:block">
+                <a href="#enquire"
+                    class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                    Enquire Now
+                    <span><img src="assets/images/Frame.png" alt=""></span>
+                </a>
+            </div>
             <div id="mobile-menu" class="md:hidden hidden w-full bg-white">
                 <nav class="flex flex-col space-y-4 py-4 px-6">
                     <a href="#" class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg">Home</a>
@@ -116,62 +118,79 @@
     </section>
 
     <!-- Card -->
-     <div class="relative lg:block hidden">
+    <div class="relative lg:block hidden">
         <div class="absolute top-0 right-0">
             <img src="assets/images/pngwing 8.png" alt="">
         </div>
-     </div>
+    </div>
     <section class="bg-white py-8">
         <div class="max-w-[1440px] mx-auto px-4">
             <!-- Tabs Navigation -->
-            <div class="flex-wrap lg:flex justify-between items-center mb-6  py-4">
-                <div class="flex-wrap lg:flex  border border-[#002155] bg-[#E7ECF8] max-w-[939px]">
-                    <button class="px-4 py-5 bg-[#002155] text-white rounded-lg font-semibold w-full">Fresh Fruits</button>
-                    <button class="px-4 py-5 border border-b-2 border-black  text-gray-800 rounded-lg font-semibold w-full">Fresh Vegetables</button>
-                    <button class="px-4 py-5  text-gray-800 rounded-lg font-semibold w-full">Grounded Spices</button>
-                    <button class="px-4 py-5  text-gray-800 rounded-lg font-semibold w-full">Dairy Product</button>
+            <div class="lg:flex justify-between items-center mb-6 gap-4 py-4">
+                <div class="flex-wrap lg:flex-nowrap flex  border border-[#002155] bg-[#E7ECF8] w-full">
+                    <button class="px-4 py-5 bg-[#002155] text-white lg:rounded-lg font-semibold w-full">Fresh
+                        Fruits</button>
+                    <button
+                        class="px-4 py-5 lg:border-b-0 border-b-2 border-black  text-gray-800 lg:rounded-lg font-semibold w-full">Fresh
+                        Vegetables</button>
+                    <button
+                        class="px-4 py-5 lg:border-b-0 border-b-2 border-black  text-gray-800 lg:rounded-lg font-semibold w-full">Grounded
+                        Spices</button>
+                    <button
+                        class="px-4 py-5 lg:border-b-0 border-b-2 border-black text-gray-800 lg:rounded-lg font-semibold w-full">Dairy
+                        Product</button>
                 </div>
-                <div class="flex border border-[#002155] px-3 py-4 bg-[#E7ECF8]">
-                    <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
-                    <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
-                </div>
-                <div class="flex border border-[#002155] px-3 py-4 bg-[#E7ECF8]">
-                    <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
-                    <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
-                    <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
-                </div>
-                <div class="flex items-center space-x-2 border border-[#002155] px-3 py-4 bg-[#E7ECF8]">
-                    <select class=" rounded">
-                        <option>Default Sorting</option>
-                        <option>Price: Low to High</option>
-                        <option>Price: High to Low</option>
-                    </select>
+                <div class="flex gap-4">
+                    <div class="flex border border-[#002155] px-3 py-4 bg-[#E7ECF8] lg:mt-0 mt-4">
+                        <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
+                        <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
+                    </div>
+                    <div class="flex border border-[#002155] px-3 py-4 bg-[#E7ECF8]">
+                        <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
+                        <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
+                        <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
+                    </div>
+                    <div class="flex items-center space-x-2 border border-[#002155] px-3 py-4 bg-[#E7ECF8]">
+                        <select class=" rounded">
+                            <option>Default Sorting</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
 
-          
-            
-    
+
+
+
             <!-- Product Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Product Card -->
                 <div class="border rounded-lg overflow-hidden shadow-lg">
-                    <img src="assets/images/Rectangle 1979.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
+                    <img src="assets/images/Rectangle 1979.png" alt="Product 1"
+                        class="w-[466px] h-[411px] object-cover">
                     <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh Banana</h3>
-                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00</p>
-                        <a href="showproduct.html" class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
+                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh
+                            Banana</h3>
+                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00
+                        </p>
+                        <a href="showproduct.html"
+                            class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
                             Enquire Here
                         </a>
                     </div>
                 </div>
                 <div class="border rounded-lg overflow-hidden shadow-lg">
-                    <img src="assets/images/Rectangle 1941.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
+                    <img src="assets/images/Rectangle 1941.png" alt="Product 1"
+                        class="w-[466px] h-[411px] object-cover">
                     <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic  Fresh Grapes</h3>
-                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00</p>
-                        <a href="showproduct.html" class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
+                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh
+                            Grapes</h3>
+                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00
+                        </p>
+                        <a href="showproduct.html"
+                            class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
                             Enquire Here
                         </a>
                     </div>
@@ -179,9 +198,12 @@
                 <div class="border rounded-lg overflow-hidden shadow-lg">
                     <img src="assets/images/1942.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
                     <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic  Fresh Mangoes</h3>
-                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00</p>
-                        <a href="showproduct.html" class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
+                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh
+                            Mangoes</h3>
+                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00
+                        </p>
+                        <a href="showproduct.html"
+                            class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
                             Enquire Here
                         </a>
                     </div>
@@ -189,9 +211,12 @@
                 <div class="border rounded-lg overflow-hidden shadow-lg lg:block hidden">
                     <img src="assets/images/1943.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
                     <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic  Fresh  Watermelon</h3>
-                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00</p>
-                        <a href="showproduct.html" class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
+                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh
+                            Watermelon</h3>
+                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00
+                        </p>
+                        <a href="showproduct.html"
+                            class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
                             Enquire Here
                         </a>
                     </div>
@@ -199,9 +224,12 @@
                 <div class="border rounded-lg overflow-hidden shadow-lg lg:block hidden">
                     <img src="assets/images/1944.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
                     <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic  Fresh Chikoos</h3>
-                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00</p>
-                        <a href="showproduct.html" class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
+                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh
+                            Chikoos</h3>
+                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00
+                        </p>
+                        <a href="showproduct.html"
+                            class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
                             Enquire Here
                         </a>
                     </div>
@@ -209,29 +237,32 @@
                 <div class="border rounded-lg overflow-hidden shadow-lg lg:block hidden">
                     <img src="assets/images/1945.png" alt="Product 1" class="w-[466px] h-[411px] object-cover">
                     <div class="p-4">
-                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic  Fresh Round Kivi</h3>
-                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00</p>
-                        <a href="showproduct.html" class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
+                        <h3 class="text-[26px] leading-[22px] font-nunito font-semibold text-gray-800">Organic Fresh
+                            Round Kivi</h3>
+                        <p class="text-[#181716] font-nunito text-[20px] leading-[24px] font-medium mt-3">₹ 5,190.625.00
+                        </p>
+                        <a href="showproduct.html"
+                            class="mt-4 w-full bg-[#002469] text-white py-3 rounded-[6px] text-[18px] leading-[20px] font-nunito font-semibold inline-block text-center">
                             Enquire Here
                         </a>
                     </div>
                 </div>
- 
+
             </div>
-    
+
             <!-- Load More Button -->
             <div class="text-center mt-8">
                 <a href=""
-                class="px-6 py-3 bg-[#002469] text-white text-[17px] font-bold rounded-lg border border-[rgba(234,110,0,1)] border-opacity-0 flex items-center justify-center w-[186px]">
-                Load       More
-                <span class="ml-2">
-                    <img src="assets/images/Frame.png" alt="Arrow">
-                </span>
-            </a>
+                    class="px-6 py-3 bg-[#002469] text-white text-[17px] font-bold rounded-lg border border-[rgba(234,110,0,1)] border-opacity-0 flex items-center justify-center w-[186px]">
+                    Load More
+                    <span class="ml-2">
+                        <img src="assets/images/Frame.png" alt="Arrow">
+                    </span>
+                </a>
             </div>
         </div>
     </section>
-  
+
     <footer class="bg-[#25395F] relative">
         <img src="assets/images/footer-left-bg.png" alt="layer" class="absolute h-full">
         <img src="assets/images/div.pattern-layer-two.png" alt="layer" class="absolute top-0 right-0 h-full">
@@ -248,17 +279,31 @@
                 <!-- Company Section -->
                 <div class="flex flex-nowrap  lg:flex-row justify-between  col-span-2">
                     <div class="lg:mb-12 mb-3">
-                        <h1 class="text-[#EF7F1A] font-nunito lg:text-4xl text-[20px] lg:leading-[26px] leading-[20px] font-semibold mb-5">Customer</h1>
+                        <h1
+                            class="text-[#EF7F1A] font-nunito lg:text-4xl text-[20px] lg:leading-[26px] leading-[20px] font-semibold mb-5">
+                            Customer</h1>
                         <ul class="text-2xl">
-                            <li class="pb-4"><a href="#" class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Help And Support</a></li>
-                            <li class="pb-4"><a href="#" class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Shipping And Delivery</a></li>
-                            <li class="pb-4"><a href="#" class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Payment Method</a></li>
-                            <li class="pb-4"><a href="#" class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Terms And Conditions</a></li>
-                            <li class="pb-4"><a href="#" class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Privacy Policy</a></li>
+                            <li class="pb-4"><a href="#"
+                                    class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Help
+                                    And Support</a></li>
+                            <li class="pb-4"><a href="#"
+                                    class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Shipping
+                                    And Delivery</a></li>
+                            <li class="pb-4"><a href="#"
+                                    class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Payment
+                                    Method</a></li>
+                            <li class="pb-4"><a href="#"
+                                    class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Terms
+                                    And Conditions</a></li>
+                            <li class="pb-4"><a href="#"
+                                    class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Privacy
+                                    Policy</a></li>
                         </ul>
                     </div>
                     <div class="lg:mb-12 mb-3">
-                        <h1 class="text-[#EF7F1A] font-nunito lg:text-4xl text-[20px] lg:leading-[26px] leading-[20px] font-semibold mb-5">Company</h1>
+                        <h1
+                            class="text-[#EF7F1A] font-nunito lg:text-4xl text-[20px] lg:leading-[26px] leading-[20px] font-semibold mb-5">
+                            Company</h1>
                         <ul class="text-2xl">
                             <li class="pb-4"><a href="#" class="text-[#fff]">About Company</a></li>
                             <li class="pb-4"><a href="#" class="text-[#fff]">Products</a></li>
@@ -267,7 +312,7 @@
                     </div>
 
                     <!-- Customer Section -->
-                    
+
                 </div>
             </div>
         </div>
@@ -310,8 +355,9 @@
                 Themezaa.</p>
         </div>
     </footer>
-    
-    
+
+
 
 </body>
+
 </html>
