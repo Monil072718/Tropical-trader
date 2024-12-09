@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="max-w-[1440px] flex justify-center  bg-gray-50">
+        <!-- Left Side: Contact Information -->
+        <div class="contact-card " style="align-self: center;">
+          <div class="bg-[#094495] text-white w-full p-8">
+            <h2 class="text-2xl font-bold mb-4">Contact Information</h2>
+            <p class="text-sm mb-6">Say something to start a live chat!</p>
+
+            <ul class="space-y-4">
+              <li class="flex items-center">
+                <span><i class="fa-solid fa-phone"></i> +91 9825312133 / 261 2563232</span>
+              </li>
+              <li class="flex items-center">
+                <span><i class="fa-solid fa-envelope"></i> info@smithospitals.com</span>
+              </li>
+              <li class="flex items-center">
+                <span><i class="fa-solid fa-location-dot"></i> Location : 3rd Floor, CTC Building, Varachha Main
+                  Rd,Near Baroda Prestage, Hans Society
+                  Surat, Gujarat 395006</span>
+              </li>
+            </ul>
+            <div class="flex space-x-4 mt-24">
+              <a href="#" class="text-white hover:text-blue-400 text-2xl">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="text-white hover:text-blue-400 text-2xl">
+                <i class="fa-brands fa-instagram "></i>
+              </a>
+              <a href="#" class="text-white hover:text-blue-400 text-2xl">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="p-8">
+          <form action="#" method="POST" class="space-y-6 ">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Full Name"
+                class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#094495] focus:outline-none" required>
+              <input type="text" placeholder="Last Name"
+                class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#094495] focus:outline-none" required>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input type="email" placeholder="Email"
+                class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#094495] focus:outline-none" required>
+              <input type="tel" placeholder="Phone Number"
+                class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#094495] focus:outline-none" required>
+            </div>
+            <textarea placeholder="Message"
+              class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#094495] focus:outline-none" rows="4"
+              required></textarea>
+            <div>
+              <p class="mb-2 font-semibold">Select Subject ?</p>
+              <div class="flex items-center space-x-4">
+                <label class="flex items-center">
+                  <input type="radio" name="subject" value="General Inquiry" checked>
+                  <span class="ml-2">General Inquiry</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="subject" value="Feedback">
+                  <span class="ml-2">Feedback</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="subject" value="General Inquiry">
+                  <span class="ml-2">General Inquiry</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="subject" value="Feedback">
+                  <span class="ml-2">Feedback</span>
+                </label>
+              </div>
+            </div>
+            <button type="submit"
+              class="bg-[#094495] text-white px-8 py-4 flex rounded-lg hover:bg-[#072f73] transition">Submit <img
+                src="assets/images/Frame.svg" alt="" class="w-[24px] h-[24px]"> </button>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
