@@ -50,42 +50,73 @@
                 <img src="assets//images/logo.png" alt="TTC Logo" class="h-[79px]">
             </div>
             <!-- Navigation Links -->
-            <div class="menu">
+            <div class="flex items-center space-x-8">
                 <nav class="hidden md:flex space-x-8 text-gray-600">
-                    <a href="index.html"
+                    <a href="#"
                         class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg text-customBlue">Home</a>
                     <a href="about.html" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
                     <a href="product.html"
                         class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
                     <a href="blog.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Blog</a>
-                    <a href="contact.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact Us</a>
+                    <a href="contact.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact
+                        Us</a>
                 </nav>
             </div>
-            <!-- Enquire Now Button -->
-            <div class="">
-                <a href="#enquire"
-                    class="w-[186px] h-[50px]  p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
-                    Enquire Now
-                    <span class=""><img src="assets/images/Frame.png" alt=""></span>
-                </a>
+
+                <!-- Enquire Now Button -->
+                <div class="hidden md:block">
+                    <a href="#enquire"
+                        class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                        Enquire Now
+                        <span><img src="assets/images/Frame.png" alt=""></span>
+                    </a>
+                </div>
+            <div id="mobile-menu" class="md:hidden hidden w-full bg-white">
+                <nav class="flex flex-col space-y-4 py-4 px-6">
+                    <a href="#" class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg">Home</a>
+                    <a href="about.html" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
+                    <a href="product.html"
+                        class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
+                    <a href="blog.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Blog</a>
+                    <a href="contact.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact
+                        Us</a>
+                    <div class="mt-6">
+                        <a href="#enquire"
+                            class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                            Enquire Now
+                            <span><img src="assets/images/Frame.png" alt=""></span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <!-- Mobile Hamburger Menu -->
+            <div class="md:hidden flex items-center ">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-customBlue me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
     <!-- banner -->
-    <section class="relative bg-cover bg-center h-[603px]"
-        style="background-image: url('assets/images/Rectangle 1948.png');">
-        <div class="absolute inset-0 bg-[#25395FB2]"></div>
+    <section class="relative bg-cover bg-center lg:py-48 py-36"
+    style="background-image: url('assets/images/Rectangle 1948.png');">
+    <div class="absolute inset-0 bg-[#25395FB2]"></div>
 
-        <div class="max-w-[1440px] mx-auto relative flex justify-start items-center h-full">
-            <h1 class="text-white text-[70px] leading-[70px] font-nunito font-bold flex items-center gap-2">
-                Products
-                <span class="flex items-center">
-                    <span class="w-6 h-[2px] bg-white"></span>
-                    <span class="w-2 h-2 bg-white rounded-full ml-1"></span>
-                </span>
-            </h1>
-        </div>
-    </section>
+    <div class="max-w-[1440px] mx-auto relative flex justify-start items-center p-4">
+        <h1
+            class="text-white lg:text-[70px] text-[24px] lg:leading-[70px] leading-[30px] font-nunito font-bold flex items-center gap-2">
+            PRODUCTS
+            <span class="flex items-center">
+                <span class="w-6 h-[2px] bg-white"></span>
+                <span class="w-2 h-2 bg-white rounded-full ml-1"></span>
+            </span>
+        </h1>
+    </div>
+</section>
 
     <section class="relative">
         <div class="absolute top-0 right-0">
@@ -163,81 +194,83 @@
             </div>
         </div>
     </section>
-    <footer>
-        <footer class="bg-[#25395F]  relative">
-            <!-- layer-1 -->
-            <img src="assets/images/as.png" alt="layer" class="absolute top-0 left-0 h-full ">
-            <!-- layer-2 -->
-             <img src="assets/images/div.pattern-layer-two.png" alt="layer" class="absolute top-0 right-0 h-full">
-            <div class="max-w-[1440px] mx-auto px-4">
-                <div class="flex justify-between py-24">
-                    <div class="">
-                        <img src="assets/images/logowhite.png" alt="" class="w-full mb-12">
-                        <button class="px-16 py-4 border border-white text-[#EF7F1A] rounded-lg text-2xl font-semibold ">
-                            Contact
-                        </button>
-                    </div>
-                    <div>
-                        <h1 class="text-[#EF7F1A] font-nunito text-4xl leading-[26px] font-semibold mb-5">
-                            Company
-                        </h1>
+    <footer class="bg-[#25395F] relative">
+        <img src="assets/images/footer-left-bg.png" alt="layer" class="absolute h-full">
+        <img src="assets/images/div.pattern-layer-two.png" alt="layer" class="absolute top-0 right-0 h-full">
+        <div class="max-w-[1440px] mx-auto px-4">
+            <!-- Logo and Contact Button -->
+            <div class="grid md:grid-cols-3 flex-wrap lg:py-24 py-12">
+                <div class="lg:mb-12 mb-8 text-center md:col-span-1 col-span-2 lg:text-left">
+                    <img src="assets/images/logowhite.png" alt="" class=" mb-6 lg:mb-12 mx-auto lg:mx-0">
+                    <button class="px-14 py-2 border-2 border-white text-[#EF7F1A] rounded-lg text-2xl font-semibold">
+                        Contact
+                    </button>
+                </div>
+
+                <!-- Company Section -->
+                <div class="flex flex-nowrap  lg:flex-row justify-between  col-span-2">
+                    <div class="lg:mb-12 mb-3">
+                        <h1 class="text-[#EF7F1A] font-nunito lg:text-4xl text-[20px] lg:leading-[26px] leading-[20px] font-semibold mb-5">Customer</h1>
                         <ul class="text-2xl">
-                            <li class="pb-4"><a href="#" class="text-[#fff] ">About Company</a></li>
-                            <li class="pb-4"><a href="#" class="text-[#fff] ">Products</a></li>
-                            <li class="pb-4"><a href="#" class="text-[#fff] ">Blog</a></li>
+                            <li class="pb-4"><a href="#" class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Help And Support</a></li>
+                            <li class="pb-4"><a href="#" class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Shipping And Delivery</a></li>
+                            <li class="pb-4"><a href="#" class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Payment Method</a></li>
+                            <li class="pb-4"><a href="#" class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Terms And Conditions</a></li>
+                            <li class="pb-4"><a href="#" class="text-[#fff] lg:text-[18px] text-[16px] lg:leading-[20px] leading-[16px] font-nunito font-medium">Privacy Policy</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h1 class="text-[#EF7F1A] font-nunito text-4xl leading-[26px] font-semibold mb-5">Customer</h1>
+                    <div class="lg:mb-12 mb-3">
+                        <h1 class="text-[#EF7F1A] font-nunito lg:text-4xl text-[20px] lg:leading-[26px] leading-[20px] font-semibold mb-5">Company</h1>
                         <ul class="text-2xl">
-                            <li class="pb-4"><a href="#" class="text-[#fff]">Help And Support</a></li>
-                            <li class="pb-4"><a href="#" class="text-[#fff]">Shipping And Delivery</a></li>
-                            <li class="pb-4"><a href="#" class="text-[#fff]">Payment Method</a></li>
-                            <li class="pb-4"><a href="#" class="text-[#fff]">Terms And Conditions</a></li>
-                            <li class="pb-4"><a href="#" class="text-[#fff]">Privacy Policy</a></li>
+                            <li class="pb-4"><a href="#" class="text-[#fff]">About Company</a></li>
+                            <li class="pb-4"><a href="#" class="text-[#fff]">Products</a></li>
+                            <li class="pb-4"><a href="#" class="text-[#fff]">Blog</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="flex items-center justify-center mb-4">
-                    <h1 class="text-white font-nunito text-[24px] leading-[26px] font-semibold ">
-                        Followers :
-                    </h1>
-                    <div class="bg-white p-2 rounded-full ms-3">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.22738 10.4668H5.38979C5.09281 10.4668 5 10.3542 5 10.0726V7.801C5 7.50063 5.11137 7.40676 5.38979 7.40676H7.22738V5.75469C7.22738 5.00375 7.35731 4.29036 7.72854 3.63329C8.11833 2.95745 8.67517 2.50688 9.38051 2.24405C9.84455 2.07509 10.3086 2 10.8097 2H12.6288C12.8886 2 13 2.11264 13 2.37547V4.51564C13 4.77847 12.8886 4.89111 12.6288 4.89111C12.1276 4.89111 11.6265 4.89111 11.1253 4.90989C10.6241 4.90989 10.3643 5.15394 10.3643 5.6796C10.3457 6.2428 10.3643 6.78723 10.3643 7.36921H12.5174C12.8144 7.36921 12.9258 7.48185 12.9258 7.78223V10.0538C12.9258 10.3542 12.8329 10.4481 12.5174 10.4481H10.3643V16.5682C10.3643 16.8874 10.2715 17 9.93736 17H7.61717C7.33875 17 7.22738 16.8874 7.22738 16.6058V10.4668Z" fill="#25395F"/>
-                            </svg>      
-                    </div>
-                    <div class="bg-white p-2 rounded-full ms-3">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_673_17)">
-                            <rect width="18" height="18" fill="white"/>
-                            <path d="M14.2324 3.33105C13.9915 3.33105 13.7954 3.52712 13.7954 3.76805C13.7954 4.00897 13.9915 4.20504 14.2324 4.20504C14.4734 4.20504 14.6694 4.00901 14.6694 3.76805C14.6694 3.52709 14.4734 3.33105 14.2324 3.33105ZM9.00005 5.12631C6.86389 5.12631 5.12598 6.86422 5.12598 9.00039C5.12598 11.1366 6.86389 12.8745 9.00005 12.8745C11.1363 12.8745 12.8742 11.1366 12.8742 9.00042C12.8742 6.86426 11.1363 5.12631 9.00005 5.12631Z" fill="#25395F"/>
-                            <path d="M13.0656 0H4.93443C2.21358 0 0 2.21358 0 4.93446V13.0656C0 15.7865 2.21358 18 4.93443 18H13.0656C15.7865 18 18 15.7864 18 13.0656V4.93446C18 2.21358 15.7865 0 13.0656 0ZM9 13.9371C6.27768 13.9371 4.06297 11.7223 4.06297 9C4.06297 6.27768 6.27771 4.06301 9 4.06301C11.7223 4.06301 13.9371 6.27771 13.9371 9C13.9371 11.7223 11.7223 13.9371 9 13.9371ZM14.2323 5.26767C13.4053 5.26767 12.7324 4.59478 12.7324 3.7677C12.7324 2.94061 13.4053 2.26768 14.2323 2.26768C15.0594 2.26768 15.7323 2.94057 15.7323 3.76766C15.7323 4.59475 15.0594 5.26767 14.2323 5.26767Z" fill="#25395F"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_673_17">
-                            <rect width="18" height="18" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>
-                               
-                    </div>
-                    <div class="bg-white p-2 rounded-full ms-3">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 18V12.14C18 9.26 17.38 7.06 14.02 7.06C12.4 7.06 11.32 7.94 10.88 8.78H10.84V7.32H7.66V18H10.98V12.7C10.98 11.3 11.24 9.96 12.96 9.96C14.66 9.96 14.68 11.54 14.68 12.78V17.98H18V18ZM2.26 7.32H5.58V18H2.26V7.32ZM3.92 2C2.86 2 2 2.86 2 3.92C2 4.98 2.86 5.86 3.92 5.86C4.98 5.86 5.84 4.98 5.84 3.92C5.84 2.86 4.98 2 3.92 2Z" fill="#25395F"/>
-                            </svg>                             
-                    </div>
-                    <div class="bg-white p-2 rounded-full ms-3">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.98 5.04C17.38 5.3 16.76 5.48 16.1 5.56C16.78 5.16 17.3 4.52 17.54 3.74C16.9 4.12 16.2 4.38 15.46 4.54C14.86 3.9 14 3.5 13.06 3.5C11.24 3.5 9.77998 4.98 9.77998 6.78C9.77998 7.04 9.79998 7.28 9.85998 7.52C7.13998 7.4 4.73998 6.08 3.11998 4.1C1.95998 6.18 3.25998 7.9 4.11998 8.48C3.59998 8.48 3.07998 8.32 2.63998 8.08C2.63998 9.7 3.77998 11.04 5.25998 11.34C4.93998 11.44 4.21998 11.5 3.77998 11.4C4.19998 12.7 5.41998 13.66 6.83998 13.68C5.71998 14.56 4.07998 15.26 1.97998 15.04C3.43998 15.98 5.15998 16.52 7.01998 16.52C13.06 16.52 16.34 11.52 16.34 7.2C16.34 7.06 16.34 6.92 16.32 6.78C17 6.28 17.56 5.7 17.98 5.04Z" fill="#25395F"/>
-                            </svg>  
-                    </div>
+
+                    <!-- Customer Section -->
+                    
                 </div>
             </div>
-            <div class="text-start border-t-2 border-gray-300 py-2">
-                <p class="max-w-[1440px] mx-auto text-gray-200 text-center">Tropical Trade Corporation-Proudly Powered by Themezaa.</p>
+        </div>
+
+        <!-- Social Icons Section -->
+        <div class="flex items-center justify-center mb-4">
+            <h1 class="text-white font-nunito text-[24px] leading-[26px] font-semibold">Followers :</h1>
+            <div class="bg-white p-2 rounded-full ms-3">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.22738 10.4668H5.38979C5.09281 10.4668 5 10.3542 5 10.0726V7.801C5 7.50063 5.11137 7.40676 5.38979 7.40676H7.22738V5.75469C7.22738 5.00375 7.35731 4.29036 7.72854 3.63329C8.11833 2.95745 8.67517 2.50688 9.38051 2.24405C9.84455 2.07509 10.3086 2 10.8097 2H12.6288C12.8886 2 13 2.11264 13 2.37547V4.51564C13 4.77847 12.8886 4.89111 12.6288 4.89111C12.1276 4.89111 11.6265 4.89111 11.1253 4.90989C10.6241 4.90989 10.3643 5.15394 10.3643 5.6796C10.3457 6.2428 10.3643 6.78723 10.3643 7.36921H12.5174C12.8144 7.36921 12.9258 7.48185 12.9258 7.78223V10.0538C12.9258 10.3542 12.8329 10.4481 12.5174 10.4481H10.3643V16.5682C10.3643 16.8874 10.2715 17 9.93736 17H7.61717C7.33875 17 7.22738 16.8874 7.22738 16.6058V10.4668Z"
+                        fill="#25395F" />
+                </svg>
             </div>
-        </footer>
+            <div class="bg-white p-2 rounded-full ms-3">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_673_17)">
+                        <rect width="18" height="18" fill="white" />
+                        <path
+                            d="M14.2324 3.33105C13.9915 3.33105 13.7954 3.52712 13.7954 3.76805C13.7954 4.00897 13.9915 4.20504 14.2324 4.20504C14.4734 4.20504 14.6694 4.00901 14.6694 3.76805C14.6694 3.52709 14.4734 3.33105 14.2324 3.33105ZM9.00005 5.12631C6.86389 5.12631 5.12598 6.86422 5.12598 9.00039C5.12598 11.1366 6.86389 12.8745 9.00005 12.8745C11.1363 12.8745 12.8742 11.1366 12.8742 9.00042C12.8742 6.86426 11.1363 5.12631 9.00005 5.12631Z"
+                            fill="#25395F" />
+                        <path
+                            d="M13.0656 0H4.93443C2.21358 0 0 2.21358 0 4.93446V13.0656C0 15.7865 2.21358 18 4.93443 18H13.0656C15.7865 18 18 15.7864 18 13.0656V4.93446C18 2.21358 15.7865 0 13.0656 0ZM9 13.9371C6.27768 13.9371 4.06297 11.7223 4.06297 9C4.06297 6.27768 6.27771 4.06301 9 4.06301C11.7223 4.06301 13.9371 6.27771 13.9371 9C13.9371 11.7223 11.7223 13.9371 9 13.9371ZM14.2323 5.26767C13.4053 5.26767 12.7324 4.59478 12.7324 3.7677C12.7324 2.94061 13.4053 2.26768 14.2323 2.26768C15.0594 2.26768 15.7323 2.94057 15.7323 3.76766C15.7323 4.59475 15.0594 5.26767 14.2323 5.26767Z"
+                            fill="#25395F" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_673_17">
+                            <rect width="18" height="18" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Footer Text -->
+        <div class="text-start border-t-2 border-gray-300 py-2">
+            <p class="max-w-[1440px] mx-auto text-gray-200 text-center">Tropical Trade Corporation-Proudly Powered by
+                Themezaa.</p>
+        </div>
     </footer>
 </body>
 
