@@ -70,14 +70,14 @@
                 </nav>
             </div>
 
-                <!-- Enquire Now Button -->
-                <div class="hidden md:block">
-                    <a href="#enquire"
-                        class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
-                        Enquire Now
-                        <span><img src="assets/images/Frame.png" alt=""></span>
-                    </a>
-                </div>
+            <!-- Enquire Now Button -->
+            <div class="hidden md:block">
+                <a href="#enquire"
+                    class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                    Enquire Now
+                    <span><img src="assets/images/Frame.png" alt=""></span>
+                </a>
+            </div>
             <div id="mobile-menu" class="md:hidden hidden w-full bg-white">
                 <nav class="flex flex-col space-y-4 py-4 px-6">
                     <a href="#" class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg">Home</a>
@@ -98,7 +98,7 @@
             </div>
             <!-- Mobile Hamburger Menu -->
             <div class="md:hidden flex items-center">
-                <button id="mobile-menu-button" class="text-gray-600 hover:text-customBlue">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-customBlue focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                         class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -106,6 +106,39 @@
                     </svg>
                 </button>
             </div>
+
+            <!-- Off-Canvas Mobile Menu -->
+            <div id="off-canvas-menu"
+                class="fixed top-0 right-[-100%]  w-full bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out">
+                <div class="flex justify-end p-4">
+                    <button id="close-menu-button" class="text-gray-600 hover:text-customBlue focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col space-y-4 py-4 px-6">
+                    <a href="#" class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg">Home</a>
+                    <a href="about.html" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
+                    <a href="product.html"
+                        class="hover:text-customBlue font-nunito text-lg text-customGray">Products</a>
+                    <a href="blog.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Blog</a>
+                    <a href="contact.html" class="hover:text-customBlue font-nunito text-lg text-customGray">Contact
+                        Us</a>
+                    <div class="mt-6">
+                        <a href="#enquire"
+                            class="w-[186px] h-[50px] p-[13px_22px_13px_22px] gap-2 rounded-[10px] border border-[rgba(234,110,0,1)] border-opacity-0 bg-[rgba(0,36,105,1)] flex font-nunito text-[17px] font-bold leading-[16px] text-left justify-items-center items-center text-white">
+                            Enquire Now
+                            <span><img src="assets/images/Frame.png" alt=""></span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+
+
         </div>
     </header>
 
@@ -1021,13 +1054,24 @@
                     </defs>
                 </svg>
             </div>
+            <div class="bg-white p-2 rounded-full ms-3">
+                <svg width="18" height="18" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.8 13.0002V8.31219C12.8 6.00819 12.304 4.24819 9.616 4.24819C8.32 4.24819 7.456 4.9522 7.104 5.6242H7.072V4.45619H4.528V13.0002H7.184V8.76019C7.184 7.64019 7.392 6.56819 8.768 6.56819C10.128 6.56819 10.144 7.83219 10.144 8.82419V12.9842H12.8V13.0002ZM0.208 4.45619H2.864V13.0002H0.208V4.45619ZM1.536 0.200195C0.688 0.200195 0 0.888195 0 1.7362C0 2.5842 0.688 3.28819 1.536 3.28819C2.384 3.28819 3.072 2.5842 3.072 1.7362C3.072 0.888195 2.384 0.200195 1.536 0.200195Z" fill="#25395F"/>
+                    </svg>
+                    
+            </div>
+            <div class="bg-white p-2 rounded-full ms-3">
+                <svg width="18" height="18" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.7844 1.63215C13.3044 1.84015 12.8084 1.98415 12.2804 2.04815C12.8244 1.72815 13.2404 1.21615 13.4324 0.592147C12.9204 0.896147 12.3604 1.10415 11.7684 1.23215C11.2884 0.720147 10.6004 0.400146 9.84837 0.400146C8.39237 0.400146 7.22437 1.58415 7.22437 3.02415C7.22437 3.23215 7.24037 3.42415 7.28837 3.61615C5.11237 3.52015 3.19237 2.46415 1.89638 0.880146C0.968375 2.54415 2.00837 3.92015 2.69637 4.38415C2.28038 4.38415 1.86437 4.25615 1.51237 4.06415C1.51237 5.36015 2.42437 6.43215 3.60837 6.67215C3.35237 6.75215 2.77637 6.80015 2.42437 6.72015C2.76037 7.76015 3.73637 8.52815 4.87237 8.54415C3.97637 9.24815 2.66437 9.80815 0.984375 9.63215C2.15237 10.3841 3.52837 10.8161 5.01637 10.8161C9.84837 10.8161 12.4724 6.81615 12.4724 3.36015C12.4724 3.24815 12.4724 3.13615 12.4564 3.02415C13.0004 2.62415 13.4484 2.16015 13.7844 1.63215Z" fill="#25395F"/>
+                    </svg>
+            </div>
         </div>
 
         </div>
 
         <!-- Footer Text -->
-        <div class="text-start border-t-2 border-gray-300 py-2">
-            <p class="max-w-[1440px] mx-auto text-gray-200 text-center">Tropical Trade Corporation-Proudly Powered by
+        <div class="text-start border-t-2 border-gray-300 lg:py-2 py-4 lg:p-0 p-3">
+            <p class="max-w-[1440px] mx-auto text-gray-200 text-center lg:text-[16px] text-[14px]">Tropical Trade Corporation-Proudly Powered by
                 Themezaa.</p>
         </div>
     </footer>
@@ -1041,10 +1085,24 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $(document).ready(function () {
-        // Toggle mobile menu
-        $('#mobile-menu-button').click(function () {
-            $('#mobile-menu').toggleClass('hidden');
+     $(document).ready(function () {
+        const mobileMenu = $('#off-canvas-menu'); // Updated ID for off-canvas menu
+        const mobileMenuButton = $('#mobile-menu-button');
+        const closeMenuButton = $('#close-menu-button');
+
+        // Show off-canvas menu
+        mobileMenuButton.click(function () {
+            mobileMenu.removeClass('right-[-100%]').addClass('right-0');
+        });
+
+        // Hide off-canvas menu
+        closeMenuButton.click(function () {
+            mobileMenu.removeClass('right-0').addClass('right-[-100%]');
+        });
+
+        // Prevent menu close when interacting with the menu
+        mobileMenu.click(function (e) {
+            e.stopPropagation();
         });
     });
 
