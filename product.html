@@ -51,7 +51,7 @@
             <!-- Navigation Links -->
             <div class="flex items-center space-x-8">
                 <nav class="hidden md:flex space-x-8 text-gray-600">
-                    <a href="#"
+                    <a href="index.html"
                         class="text-blue-900 font-semibold hover:text-blue-700 font-nunito text-lg text-customBlue">Home</a>
                     <a href="about.html" class="hover:text-customBlue font-nunito text-lg text-customGray">About Us</a>
                     <a href="product.html"
@@ -160,30 +160,42 @@
         <div class="max-w-[1440px] mx-auto px-4">
             <!-- Tabs Navigation -->
             <div class="lg:flex justify-between items-center mb-6 gap-4 py-4">
-                <div class="flex-wrap lg:flex-nowrap flex  border border-[#002155] bg-[#E7ECF8] w-full">
-                    <button class="px-4 py-5 bg-[#002155] text-white lg:rounded-lg font-semibold w-full">Fresh
-                        Fruits</button>
+                <div class="flex-wrap lg:flex-nowrap flex border border-[#002155] bg-[#E7ECF8] w-full rounded-lg">
+                    <!-- Button 1 -->
                     <button
-                        class="px-4 py-5 lg:border-b-0 border-b-2 border-black  text-gray-800 lg:rounded-lg font-semibold w-full">Fresh
-                        Vegetables</button>
+                        class="px-4 py-5 bg-[#002155] text-white lg:rounded-lg font-semibold w-full transition-all duration-300 lg:hover:bg-[#002155] lg:hover:text-white">
+                        Fresh Fruits
+                    </button>
+                    <!-- Button 2 -->
                     <button
-                        class="px-4 py-5 lg:border-b-0 border-b-2 border-black  text-gray-800 lg:rounded-lg font-semibold w-full">Grounded
-                        Spices</button>
+                        class="px-4 py-5 border-b-2 lg:border-b-0 border-black text-gray-800 lg:rounded-lg font-semibold w-full transition-all duration-300 lg:hover:bg-[#002155] lg:hover:text-white">
+                        Fresh Vegetables
+                    </button>
+                    <!-- Button 3 -->
                     <button
-                        class="px-4 py-5 lg:border-b-0 border-b-2 border-black text-gray-800 lg:rounded-lg font-semibold w-full">Dairy
-                        Product</button>
+                        class="px-4 py-5 border-b-2 lg:border-b-0 border-black text-gray-800 lg:rounded-lg font-semibold w-full transition-all duration-300 lg:hover:bg-[#002155] lg:hover:text-white">
+                        Grounded Spices
+                    </button>
+                    <!-- Button 4 -->
+                    <button
+                        class="px-4 py-5 border-b-2 lg:border-b-0 border-black text-gray-800 lg:rounded-lg font-semibold w-full transition-all duration-300 lg:hover:bg-[#002155] lg:hover:text-white">
+                        Dairy Product
+                    </button>
+                    
                 </div>
+                
+                
                 <div class="flex gap-4">
-                    <div class="flex border border-[#002155] px-3 py-4 bg-[#E7ECF8] lg:mt-0 mt-4">
+                    <div class="flex border border-[#002155] px-3 py-4 bg-[#E7ECF8] lg:mt-0 mt-4 rounded-lg">
                         <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
                         <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
                     </div>
-                    <div class="flex border border-[#002155] px-3 py-4 bg-[#E7ECF8]">
+                    <div class="flex border border-[#002155] px-3 py-4 bg-[#E7ECF8] lg:mt-0 mt-4 rounded-lg">
                         <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
                         <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
                         <div class="w-5 h-5 border border-black-500 bg-[#002469]"></div>
                     </div>
-                    <div class="flex items-center space-x-2 border border-[#002155] px-3 py-4 bg-[#E7ECF8]">
+                    <div class="flex items-center space-x-2 border border-[#002155] px-3 py-4 bg-[#E7ECF8] lg:mt-0 mt-4 lg:w-auto w-full rounded-lg">
                         <select class=" rounded">
                             <option>Default Sorting</option>
                             <option>Price: Low to High</option>
@@ -284,16 +296,18 @@
             </div>
 
             <!-- Load More Button -->
-            <div class="text-center mt-8">
-                <a href=""
-                    class="px-6 py-3 bg-[#002469] text-white text-[17px] font-bold rounded-lg border border-[rgba(234,110,0,1)] border-opacity-0 flex items-center justify-center w-[186px]">
-                    Load More
-                    <span class="ml-2">
-                        <img src="assets/images/Frame.png" alt="Arrow">
-                    </span>
-                </a>
+            <div class="flex items-center justify-center mt-8">
+                <div class="text-center">
+                    <a href=""
+                        class="px-6 py-3 bg-[#002469] text-white text-[17px] font-bold rounded-lg border border-[rgba(234,110,0,1)] border-opacity-0 flex items-center justify-center w-[186px]">
+                        Load More
+                        <span class="ml-2">
+                            <img src="assets/images/Frame.png" alt="Arrow">
+                        </span>
+                    </a>
+                </div>
             </div>
-        </div>
+            
     </section>
 
     <footer class="bg-[#25395F] relative">
@@ -414,4 +428,22 @@
             e.stopPropagation();
         });
     });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('button');
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            buttons.forEach((btn) => {
+                btn.classList.remove('bg-[#002155]', 'text-white');
+            });
+
+            // Add active class to the clicked button
+            button.classList.add('bg-[#002155]', 'text-white');
+        });
+    });
+});
+
     </script>

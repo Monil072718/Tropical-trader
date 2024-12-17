@@ -821,9 +821,9 @@
 
 
     <!-- testimonial -->
-    <section class=" lg:py-16 py-12 bg-[rgba(0,33,85,0.8)] z-[1] ">
+    <section class="lg:py-16 py-12 bg-[rgba(0,33,85,0.8)] z-[1]">
         <div class="relative">
-            <div class="absolute w-full top-[-50px] left-0  -z-[1]">
+            <div class="absolute w-full top-[-50px] left-0 -z-[1]">
                 <img src="./assets/images/Rectangle 1108.png" alt="">
             </div>
 
@@ -839,76 +839,119 @@
                         </span>
                     </p>
                     <h2 class="text-[#fff] text-[50px] font-extrabold leading-[60px] font-nunito py-4">Why Customers
-                        Love Us
-                        ?</h2>
-
+                        Love Us?</h2>
                 </div>
 
-                <!-- Testimonial Cards -->
-                <div class="lg:mt-8 flex justify-center items-center lg:space-x-4">
+                <!-- Testimonial Slider -->
+                <div class="lg:mt-8 flex justify-center items-center  relative overflow-hidden">
                     <!-- Left Navigation Button -->
-                    <button
-                        class="w-10 h-10 flex justify-center items-center bg-white rounded-full shadow-md hover:scale-110 transition-transform duration-300 lg:block hidden">
+                    <button id="prevButton"
+                        class="w-10 h-10 flex justify-center items-center bg-white rounded-full shadow-md hover:scale-110 transition-transform duration-300 absolute left-0 z-10">
                         <span class="text-[#002469] text-xl">&lt;</span>
                     </button>
 
-                    <!-- Testimonial 1 -->
-                    <div class="bg-white rounded-lg shadow-md p-8 lg:w-1/2 w-full">
-                        <div class="flex items-center space-x-4 ">
-                            <img src="assets/images/Ellipse 591.png" alt="Michel Clark"
-                                class="w-14 h-14 rounded-full object-cover">
-                            <div>
-                                <h3 class="text-[#1E1E1E] font-bold text-[18px]">Michel Clark</h3>
-                                <div class="flex items-center space-x-1 text-[#EF7F1A]">
-                                    <img src="assets/images/Star 13.png" alt="">
-                                    <img src="assets/images/Star 13.png" alt="">
-                                    <img src="assets/images/Star 13.png" alt="">
-                                    <img src="assets/images/Star 13.png" alt="">
-                                    <img src="assets/images/Star 13.png" alt="">
-
+                    <!-- Testimonial Cards Wrapper -->
+                    <div id="testimonialWrapper" class="flex transition-transform duration-500 ease-in-out gap-3 ">
+                        <!-- Testimonial 1 -->
+                        <div class="bg-white rounded-lg shadow-md p-8 w-full lg:w-1/2 flex-shrink-0">
+                            <div class="flex items-center space-x-4">
+                                <img src="assets/images/Ellipse 591.png" alt="Michel Clark"
+                                    class="w-14 h-14 rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-[#1E1E1E] font-bold text-[18px]">Michel Clark</h3>
+                                    <div class="flex items-center space-x-1 text-[#EF7F1A]">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                    </div>
                                 </div>
                             </div>
+                            <p class="mt-4 text-[#7F7F7F] text-[14px] leading-[20px]">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
                         </div>
-                        <p class="mt-4 text-[#7F7F7F] text-[14px] leading-[20px]">
-                            It is a long established fact that a reader will be distracted by the readable content of a
-                            page
-                            when looking
-                            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                            distribution
-                            of text.
-                        </p>
-                    </div>
 
-                    <!-- Testimonial 2 -->
-                    <div class="bg-white rounded-lg shadow-md p-8 w-1/2 lg:block hidden">
-                        <div class="flex items-center space-x-4 ">
-
-                            <img src="assets/images/Ellipse 591.png" alt="Michel Clark"
-                                class="w-14 h-14 rounded-full object-cover">
-                            <div>
-                                <h3 class="text-[#1E1E1E] font-bold text-[18px]">Michel Clark</h3>
-                                <div class="flex items-center space-x-1 text-[#EF7F1A]">
-                                    <img src="assets/images/Star 13.png" alt="">
-                                    <img src="assets/images/Star 13.png" alt="">
-                                    <img src="assets/images/Star 13.png" alt="">
-                                    <img src="assets/images/Star 13.png" alt="">
-                                    <img src="assets/images/Star 13.png" alt="">
+                        <!-- Testimonial 2 -->
+                        <div class="bg-white rounded-lg shadow-md p-8 w-full lg:w-1/2 flex-shrink-0">
+                            <div class="flex items-center space-x-4">
+                                <img src="assets/images/Ellipse 591.png" alt="John Doe"
+                                    class="w-14 h-14 rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-[#1E1E1E] font-bold text-[18px]">John Doe</h3>
+                                    <div class="flex items-center space-x-1 text-[#EF7F1A]">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                    </div>
                                 </div>
                             </div>
+                            <p class="mt-4 text-[#7F7F7F] text-[14px] leading-[20px]">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
                         </div>
-                        <p class="mt-4 text-[#7F7F7F] text-[14px] leading-[20px]">
-                            It is a long established fact that a reader will be distracted by the readable content of a
-                            page
-                            when looking
-                            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                            distribution
-                            of text.
-                        </p>
+
+                        <!-- Testimonial 3 -->
+                        <div class="bg-white rounded-lg shadow-md p-8 w-full lg:w-1/2 flex-shrink-0">
+                            <div class="flex items-center space-x-4">
+                                <img src="assets/images/Ellipse 591.png" alt="Jane Doe"
+                                    class="w-14 h-14 rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-[#1E1E1E] font-bold text-[18px]">Jane Doe</h3>
+                                    <div class="flex items-center space-x-1 text-[#EF7F1A]">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-[#7F7F7F] text-[14px] leading-[20px]">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-8 w-full lg:w-1/2 flex-shrink-0">
+                            <div class="flex items-center space-x-4">
+                                <img src="assets/images/Ellipse 591.png" alt="Jane Doe"
+                                    class="w-14 h-14 rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-[#1E1E1E] font-bold text-[18px]">Jane Doe</h3>
+                                    <div class="flex items-center space-x-1 text-[#EF7F1A]">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-[#7F7F7F] text-[14px] leading-[20px]">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-8 w-full lg:w-1/2 flex-shrink-0">
+                            <div class="flex items-center space-x-4">
+                                <img src="assets/images/Ellipse 591.png" alt="Jane Doe"
+                                    class="w-14 h-14 rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-[#1E1E1E] font-bold text-[18px]">Jane Doe</h3>
+                                    <div class="flex items-center space-x-1 text-[#EF7F1A]">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                        <img src="assets/images/Star 13.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-[#7F7F7F] text-[14px] leading-[20px]">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                        </div>
                     </div>
 
                     <!-- Right Navigation Button -->
-                    <button
-                        class="w-10 h-10 flex justify-center items-center bg-white rounded-full shadow-md hover:scale-110 transition-transform duration-300 lg:block hidden">
+                    <button id="nextButton"
+                        class="w-10 h-10 flex justify-center items-center bg-white rounded-full shadow-md hover:scale-110 transition-transform duration-300 absolute right-0 z-10">
                         <span class="text-[#002469] text-xl">&gt;</span>
                     </button>
                 </div>
@@ -1104,6 +1147,61 @@
         mobileMenu.click(function (e) {
             e.stopPropagation();
         });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const testimonialWrapper = document.getElementById('testimonialWrapper');
+        const testimonials = document.querySelectorAll('#testimonialWrapper > div');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        let currentIndex = 0;
+        let visibleSlides = window.innerWidth >= 1024 ? 2 : 1;
+
+        // Function to calculate visible slides dynamically
+        function updateVisibleSlides() {
+            visibleSlides = window.innerWidth >= 1024 ? 2 : 1;
+            currentIndex = Math.min(currentIndex, testimonials.length - visibleSlides);
+            updateSliderPosition();
+        }
+
+        // Update slider position considering visible slides
+        function updateSliderPosition() {
+            const totalGaps = (visibleSlides - 1) * 12; // Gap calculation (gap-3 in Tailwind)
+            const slideWidth = testimonialWrapper.offsetWidth / visibleSlides; // Width of one slide
+            const offset = currentIndex * slideWidth + currentIndex * totalGaps / visibleSlides; // Add gaps dynamically
+
+            testimonialWrapper.style.transform = `translateX(-${offset}px)`;
+        }
+
+        // Move to the previous set of slides
+        function moveToPrevious() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = testimonials.length - visibleSlides;
+            }
+            updateSliderPosition();
+        }
+
+        // Move to the next set of slides
+        function moveToNext() {
+            if (currentIndex < testimonials.length - visibleSlides) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Loop back to the beginning
+            }
+            updateSliderPosition();
+        }
+
+        // Add event listeners for buttons
+        prevButton.addEventListener('click', moveToPrevious);
+        nextButton.addEventListener('click', moveToNext);
+
+        // Recalculate slides on window resize
+        window.addEventListener('resize', updateVisibleSlides);
+
+        // Initialize slider
+        updateVisibleSlides();
     });
 
 </script>
